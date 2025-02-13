@@ -63,6 +63,7 @@ mkp_exit_AML: mkp_exit_AML {
         <&macro_tap>,
         <&sl 4>;
 
+
     label = "MKP_EXIT_AML";
 };
 
@@ -126,7 +127,7 @@ mkp_exit_AML: mkp_exit_AML {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &mkp_exit_AML　&mkp_exit_AML　&trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &mkp　MB1　&mkp　MB2 &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
         };
