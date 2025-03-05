@@ -50,7 +50,7 @@
         compatible = "zmk,behavior-macro-one-param";
         #binding-cells = <1>;
         bindings =
-            <&to 2 &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+            <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
             <&macro_press>;
 
         // スリープ操作
