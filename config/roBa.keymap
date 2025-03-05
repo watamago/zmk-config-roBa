@@ -108,8 +108,7 @@ scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
 &kp TAB           &kp LEFT_SHIFT  &kp LEFT_ALT  &mt LEFT_GUI LANGUAGE_1  &lt 2 SPACE  &mt LEFT_CONTROL LANGUAGE_2      &lt 3 ENTER        &lt 3 BACKSPACE                             &kp RG(Z)
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
-        };
+            sensor-bindings = <&scroll_up_down>;        };
 
         FUNCTION {
             bindings = <
@@ -137,8 +136,7 @@ scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
 &trans            &trans                  &trans            &trans                   &trans      &trans      &trans   &trans                                                                    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
-        };
+            sensor-bindings = <&scroll_up_down>;        };
 
         MOUSE {
             bindings = <
