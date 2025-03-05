@@ -49,12 +49,26 @@
         compatible = "zmk,behavior-macro-one-param";
         #binding-cells = <1>;
         bindings =
-            <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+            <&to 2 &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
             <&macro_press>;
 
         // スリープ操作
 
         label = "TO_LAYER_0";  // ラベルの設定
+    };
+
+    to_layer2: to_layer2 {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&none>;
+        label = "TO_LAYER2";
+    };
+
+    new_macro: new_macro {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&none>;
+        label = "NEW_MACRO";
     };
 
     behaviors {
@@ -79,7 +93,7 @@
 &kp TAB           &kp LEFT_SHIFT  &kp LEFT_ALT  &mt LEFT_GUI LANGUAGE_1  &lt 2 SPACE  &mt LEFT_CONTROL LANGUAGE_2      &lt 3 ENTER        &lt 3 BACKSPACE                             &kp RG(Z)
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
         };
 
         FUNCTION {
@@ -116,7 +130,7 @@
 &to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                                      &to_layer_0 Y  &to_layer_0 U  &to_layer_0 I  &to_layer_0 O  &to_layer_0 P
 &to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &trans         &to_layer_0 G  &trans                      &trans  &to_layer_0 H  &to_layer_0 J  &to_layer_0 K  &to_layer_0 L  &to_layer_0 MINUS
 &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B  &trans                      &trans  &to_layer_0 N  &to_layer_0 M  &mkp MB1       &mkp MB2       &trans
-&trans         &trans         &trans         &trans         &to 2          &to_layer_0 LANGUAGE_2      &trans  &trans                                                      &trans
+&trans         &trans         &trans         &trans         &to_layer2     &to_layer_0 LANGUAGE_2      &trans  &trans                                                      &trans
             >;
         };
 
