@@ -113,16 +113,4 @@
     };
 };
 
-&adc {
-    status = "okay";
 
-    joystick_x: adc_x {
-        channel = <0>;
-        label = "JOYSTICK_X";
-    };
-
-    joystick_y: adc_y {
-        channel = <1>;
-        label = "JOYSTICK_Y";
-    };
-};
