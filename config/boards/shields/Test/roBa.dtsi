@@ -113,12 +113,4 @@
     };
 };
 
-{
-    evqwd001: evqwd001 {
-        compatible = "zmk,behavior-sensor-scroll";
-        sensor = <&rotary_encoder>;
-        binding = <&kp SCROLL_UP>, <&kp SCROLL_DOWN>;
-    };
-};
-
 
