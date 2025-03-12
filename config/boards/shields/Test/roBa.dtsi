@@ -95,11 +95,11 @@
     };
 
  left_encoder: encoder_left {
-        compatible = "alps,ec11";
+        compatible = "panasonic,evqwgd001";
         a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <12>;
-        status = "disabled";
+        status = "okey";
     };
 
     right_encoder: encoder_right {
@@ -109,7 +109,7 @@
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
-        triggers-per-rotation = <10>;
+        triggers-per-rotation = <15>;
     };
 };
 
