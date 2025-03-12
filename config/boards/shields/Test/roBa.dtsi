@@ -113,10 +113,3 @@
     };
 };
 
-&encoder0 {
-    compatible = "zmk,behavior-rotary-encoder";
-    gpios = <&gpio0 15 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>, <&gpio0 16 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
-    steps = <4>;
-    binding = <&kp SCROLL_UP>, <&kp SCROLL_DOWN>;
-};
-
