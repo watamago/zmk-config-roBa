@@ -8,7 +8,7 @@
 #define SCROLL 5
 #define NUM 6
 
-、
+
 
 &mt {
     flavor = "balanced";
