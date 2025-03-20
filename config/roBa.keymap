@@ -7,7 +7,9 @@
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
+
 、
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
@@ -81,7 +83,7 @@
 &kp TAB           &kp LEFT_SHIFT  &kp LEFT_ALT  &mt LEFT_GUI LANGUAGE_1  &lt 2 SPACE  &mt LEFT_CONTROL LANGUAGE_2      &lt 3 ENTER        &lt 3 BACKSPACE                             &kp RG(Z)
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
         };
 
         FUNCTION {
@@ -100,6 +102,8 @@
 &mt LEFT_SHIFT KP_NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK  &kp SLASH      &kp RG(MINUS)  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)     &kp LC(LG(LEFT))  &kp LG(LC(ENTER))     &kp LG(LC(RIGHT))
 &trans                      &kp KP_N0     &kp KP_DOT    &trans        &trans        &trans         &trans         &trans                                                                        &kp LA(LC(LG(RIGHT_ARROW)))
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         ARROW {
