@@ -8,8 +8,6 @@
 #define SCROLL 5
 #define NUM 6
 
-
-
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
@@ -98,7 +96,7 @@
         NUM {
             bindings = <
 &kp ESCAPE                  &kp N7        &kp N8        &kp N9        &kp EQUAL                                   &kp LC(LG(L))       &kp LC(UP_ARROW)  &kp UP_ARROW      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp EQUAL                   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &kp MINUS      &kp RG(PLUS)   &kp HOME            &kp LEFT          &kp DOWN_ARROW    &kp RIGHT_ARROW       &kp END
+&kp EQUAL                   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &kp MINUS      &kp RG(PLUS)   &kp LC(A)           &kp LEFT          &kp DOWN_ARROW    &kp RIGHT_ARROW       &kp LC(E)
 &mt LEFT_SHIFT KP_NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK  &kp SLASH      &kp RG(MINUS)  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)     &kp LC(LG(LEFT))  &kp LG(LC(ENTER))     &kp LG(LC(RIGHT))
 &trans                      &kp KP_N0     &kp KP_DOT    &trans        &trans        &trans         &trans         &trans                                                                        &kp LA(LC(LG(RIGHT_ARROW)))
             >;
@@ -109,12 +107,12 @@
         ARROW {
             bindings = <
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)        &kp LS(NUMBER_3)  &kp LS(NUMBER_4)         &kp LS(N5)                       &kp LS(NUMBER_6)    &kp LS(N7)           &kp UP_ARROW    &kp LS(N9)       &kp LS(N0)
-&kp HOME          &kp LEFT_ARROW          &kp DOWN_ARROW    &kp RIGHT_ARROW          &kp END     &trans      &kp F12  &kp HOME            &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
+&kp HOME          &kp LEFT_ARROW          &kp DOWN_ARROW    &kp RIGHT_ARROW          &kp END     &trans      &kp F12  &kp LC(A)           &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(E)
 &kp LEFT_SHIFT    &kp LG(LS(LEFT_ARROW))  &trans            &kp LG(LS(RIGHT_ARROW))  &trans      &trans      &kp F11  &kp RG(LEFT_ARROW)  &kp RG(RIGHT_ARROW)  &trans          &trans           &trans
 &trans            &trans                  &trans            &trans                   &trans      &trans      &trans   &trans                                                                    &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
         };
 
         MOUSE {
