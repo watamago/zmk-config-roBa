@@ -101,7 +101,6 @@ left_encoder: encoder_left {
     b-gpios = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     steps = <12>;
     resolution = <1>;
-    bindings = <&inc_dec_kpSensor &kp UP>, <&inc_dec_kpSensor &kp DOWN>;
     status = "okay";
 };
 
