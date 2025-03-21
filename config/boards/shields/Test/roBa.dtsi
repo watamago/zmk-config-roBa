@@ -94,13 +94,15 @@
                 ;
     };
 
- left_encoder: encoder_left {
-        compatible = "alps,ec11";
-        a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <12>;
-        status = "okay";
-    };
+left_encoder: encoder_left {
+    compatible = "zmk,behavior-rotary-encoder";
+    label = "Left Rotary Encoder";
+    a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    b-gpios = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    resolution = <1>;
+    bindings = <&kp UP>, <&kp DOWN>;
+    status = "okay";
+};
 
     right_encoder: encoder_right {
         status = "disabled";
