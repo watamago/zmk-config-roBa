@@ -95,14 +95,15 @@
     };
 
 left_encoder: encoder_left {
-    compatible = "zmk,behavior-rotary-encoder";
-    label = "Left Rotary Encoder";
-    a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    b-gpios = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    resolution = <1>;
-    bindings = <&inc_dec_kpSensor UP DOWN>;
-    status = "okay";
-};
+        compatible = "zmk,behavior-rotary-encoder";
+        label = "Left Rotary Encoder";
+        a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        resolution = <1>;
+        bindings = <&inc_dec_kpSensor KP_UP KP_DOWN>;
+        status = "okay";
+    };
+
 
     right_encoder: encoder_right {
         status = "disabled";
