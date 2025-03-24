@@ -58,17 +58,21 @@
         label = "TO_LAYER_0";  // ラベルの設定
     };
 
-   / {
-    behaviors {
-        inc_dec_kpSensor: inc_dec_kpSensor {
-            compatible = "zmk,behavior-sensor-inc-dec-key-press";
-            label = "Increment/Decrement Key Press";
-            binding = <&kp>, <&kp>;
-            sensor = <&left_encoder>;
-            resolution = <1>;
+    / {
+        behaviors {
+            inc_dec_kpSensor: inc_dec_kpSensor {
+                compatible = "zmk,behavior-sensor-inc-dec-key-press";
+                label = "Increment/Decrement Key Press";
+                binding = <&kp>, <&kp>;
+
+                sensor = <&left_encoder>;
+                resolution = <1>;
+            };
         };
     };
-};
+
+    behaviors {
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -81,7 +85,7 @@
 &kp TAB           &kp LEFT_SHIFT  &kp LEFT_ALT  &mt LEFT_GUI LANGUAGE_1  &lt 2 SPACE  &mt LEFT_CONTROL LANGUAGE_2      &lt 3 ENTER        &lt 3 BACKSPACE                             &kp RG(Z)
             >;
 
-            sensor-bindings = <&inc_dec_kp A B>;
+            sensor-bindings = <&inc_dec_kp C B>;
         };
 
         FUNCTION {
