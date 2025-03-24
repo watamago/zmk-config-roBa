@@ -58,7 +58,7 @@
         label = "TO_LAYER_0";  // ラベルの設定
     };
 
-    / {
+
         behaviors {
             inc_dec_kpSensor: inc_dec_kpSensor {
                 compatible = "zmk,behavior-sensor-inc-dec-key-press";
