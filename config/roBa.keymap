@@ -83,7 +83,7 @@
 &kp TAB           &kp LEFT_SHIFT  &kp LEFT_ALT  &mt LEFT_GUI LANGUAGE_1  &lt 2 SPACE  &mt LEFT_CONTROL LANGUAGE_2      &lt 3 ENTER        &lt 3 BACKSPACE                             &kp RG(Z)
             >;
 
-            sensor-bindings = <&inc_dec_kpSensor>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         FUNCTION {
