@@ -110,7 +110,7 @@ left_encoder: encoder_left {
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder>;
-        triggers-per-rotation = <7>;
+        triggers-per-rotation = <5>;
     };
 };
 
