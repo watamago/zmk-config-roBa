@@ -63,7 +63,7 @@
             inc_dec_kpSensor: inc_dec_kpSensor {
                 compatible = "zmk,behavior-sensor-inc-dec-key-press";
                 label = "Increment/Decrement Key Press";
-                binding = <&kp>, <&kp>;
+                binding = <&kp >, <&kp >;
 
                 sensor = <&left_encoder>;
                 resolution = <1>;
