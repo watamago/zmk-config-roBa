@@ -96,10 +96,10 @@
 
         NUM {
             bindings = <
-&kp ESCAPE                  &kp N7        &kp N8        &kp N9        &kp EQUAL                                   &kp LC(LG(L))       &kp LC(UP_ARROW)  &kp UP_ARROW      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp EQUAL                   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &kp MINUS      &kp RG(PLUS)   &kp LC(A)           &kp LEFT          &kp DOWN_ARROW    &kp RIGHT_ARROW       &kp LC(E)
-&mt LEFT_SHIFT KP_NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK  &kp SLASH      &kp RG(MINUS)  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)     &kp LC(LG(LEFT))  &kp LG(LC(ENTER))     &kp LG(LC(RIGHT))
-&trans                      &kp KP_N0     &kp KP_DOT    &trans        &trans        &trans         &trans         &trans                                                                        &kp LA(LC(LG(RIGHT_ARROW)))
+&kp ESCAPE                  &kp N7        &kp N8        &kp N9        &kp EQUAL                             &kp LC(LG(L))       &kp LC(UP_ARROW)  &kp UP_ARROW      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp EQUAL                   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &kp MINUS      &kp F12  &kp LC(A)           &kp LEFT          &kp DOWN_ARROW    &kp RIGHT_ARROW       &kp LC(E)
+&mt LEFT_SHIFT KP_NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK  &kp SLASH      &kp F11  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)     &kp LC(LG(LEFT))  &kp LG(LC(ENTER))     &kp LG(LC(RIGHT))
+&trans                      &kp KP_N0     &kp KP_DOT    &trans        &trans        &trans         &trans   &trans                                                                        &kp LA(LC(LG(RIGHT_ARROW)))
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
