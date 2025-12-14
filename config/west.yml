@@ -7,8 +7,17 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3.5
       import: app/west.yml
+
+    # PMW3610 外部ドライバ（automouse-layer 対応）
+    - name: zmk-pmw3610-driver
+      remote: kumamuk-git
+      revision: main
+      path: modules/zmk-pmw3610-driver
+
+  self:
+    path: config
  
   self:
     path: config
